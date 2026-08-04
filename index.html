@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <main>
+        <h1>Tic Tac Toe</h1>
+        <p class="turn">Turn : <span class="turnValue">X</span></p>
+        <div class="msg_container hide">
+            <p class="msg">Winner</p>
+        </div>
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+
+        <div class="scoreboard">
+
+            <div class="score-box score-x">
+                <p class="score-label">Player X</p>
+                <p class="score-value" id="scoreX">0</p>
+            </div>
+
+            <div class="score-box score-draw">
+                <p class="score-label">Draws</p>
+                <p class="score-value" id="scoreDraw">0</p>
+            </div>
+
+            <div class="score-box score-o">
+                <p class="score-label">Player O</p>
+                <p class="score-value" id="scoreO">0</p>
+            </div>
+        </div>
+        
+        <div class="setting_button">
+            <div class="setting">
+                <button class="reset button">Reset Game</button>
+                <button class="newgame button">New Game</button>
+            </div>
+        </div>
+    </main>
+    <script src="game.js"></script>
+</body>
+</html>
